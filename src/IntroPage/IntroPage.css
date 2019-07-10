@@ -1,0 +1,17 @@
+.root {
+  font-family: roboto;
+  color: #2f2f2f;
+}
+
+.about {
+  color: #ff8f00;
+  font-family: roboto;
+}
+
+.cards {
+  display: flex;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+}
