@@ -30,22 +30,23 @@ class IntroPage extends React.Component {
 
     return (
       <div class="root">
-        <Collapse in={true}>
-          <div>
-            <h2 class="about">ABOUT</h2>
-            <div style={{ background: "#f08b65" }} class="centered line" />
+        <div>
+          <h2 class="about">ABOUT</h2>
+          <div style={{ background: "#f08b65" }} class="centered line" />
+          <div id="card">
             <ModCard class="myCard" image={dp} />
-            <div class="textContent">
-              <p>
-                Hi, I'm Sashank, a Full-Stack Software Engineer who is currently
-                pursuing my Masters in Computer Science. I am majorly interested
-                in Engineering applications and design both in the front-end and
-                the back-end. Looking for opportunities to further enhance my
-                skill-set and creating amazing products to help the world a
-                better place!
-              </p>
-            </div>
-            {/* <div class="cards">
+          </div>
+          <div class="textContent">
+            <p id="para">
+              Hi, I'm Sashank, a Full-Stack Software Engineer who is currently
+              pursuing my Masters in Computer Science. I am majorly interested
+              in Engineering applications and designing them both in the
+              front-end and the back-end. Looking for opportunities to further
+              enhance my skill-set and creating amazing products to help make
+              the world a better place!
+            </p>
+          </div>
+          {/* <div class="cards">
               <ModCard
                 title="Robust Code"
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -67,8 +68,7 @@ class IntroPage extends React.Component {
                 image={engineerImage}
               />
             </div> */}
-          </div>
-        </Collapse>
+        </div>
       </div>
     );
   }

@@ -20,11 +20,13 @@ class SkillSet extends React.Component {
 
             <div class="row section-content">
               <div class="col-full text-center">
-                I've worked with a wide variety of programming languages. For
-                web applications I use Javascript with the React Framework.
-                Whenever I need the most performance possible I obviously go
-                with Java and finally when I am building prototypes or working
-                on my hobby projects I fall back on Python
+                <p id="para">
+                  I've worked with a wide variety of programming languages. For
+                  web applications I use Javascript with the React Framework.
+                  Whenever I need the most performance possible I obviously go
+                  with Java and finally when I am building prototypes or working
+                  on my hobby projects I fall back on Python
+                </p>
               </div>
               <div class="skill-container">
                 <div class="col-1-5 skill">
@@ -41,6 +43,9 @@ class SkillSet extends React.Component {
                 </div>
                 <div class="col-1-5 skill">
                   <h4 id="java">Java</h4>
+                </div>
+                <div class="col-1-5 skill">
+                  <h4 id="angular">Angular</h4>
                 </div>
               </div>
               {/* <div class="col-full skill-container">

@@ -3,15 +3,27 @@
 }
 
 .title {
-  color: #0f1025;
+  /* color: #0f1025;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 10;
   letter-spacing: 0.1em;
   margin: 0 0 15px 0;
   padding: 0;
-  font-size: 2.25em;
+
   font-weight: 300;
+  color: #0f1025;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em; */
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 10;
+  letter-spacing: 0.1em;
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-weight: 10;
   color: #0f1025;
   text-transform: uppercase;
   display: block;
@@ -75,6 +87,7 @@
 }
 .skill-container {
   display: inline-block;
+  padding: 25px;
 }
 
 .col-2-3 {
@@ -118,12 +131,26 @@
 }
 
 #python {
-  background: linear-gradient(to right, #0861a5, #ffaf02);
+  color: #0861a5;
   /* background: -webkit-linear-gradient(#eee, #333); */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 #java {
   color: #e76f00;
+}
+
+#angular {
+  color: red;
+}
+
+#para {
+  -webkit-font-smoothing: antialiased;
+  color: #000000b9;
+  line-height: 1.3;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  margin: 0px;
 }
