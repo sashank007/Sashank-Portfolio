@@ -14,6 +14,7 @@ import engineerImage from "../assets/images/engineer.png";
 import dp from "../assets/images/dp.jpeg";
 import Grow from "@material-ui/core/Grow";
 import Collapse from "@material-ui/core/Grow";
+import Down from "../Common/Down";
 import "./IntroPage.css";
 class IntroPage extends React.Component {
   state = {
@@ -24,6 +25,9 @@ class IntroPage extends React.Component {
     this.setState(state => ({ checked: !state.checked }));
   };
 
+  propDown = () => {
+    this.props.handleClick();
+  };
   render() {
     const { classes } = this.props;
     const { checked } = this.state;
@@ -45,6 +49,9 @@ class IntroPage extends React.Component {
               enhance my skill-set and creating amazing products to help make
               the world a better place!
             </p>
+          </div>
+          <div id="downArrow">
+            <Down click={this.propDown} />
           </div>
           {/* <div class="cards">
               <ModCard

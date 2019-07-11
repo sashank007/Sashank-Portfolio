@@ -69,3 +69,7 @@ h4 {
   padding-right: 15%;
   margin: auto;
 }
+
+#downArrow {
+  cursor: pointer;
+}

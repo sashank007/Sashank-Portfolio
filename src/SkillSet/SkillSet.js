@@ -2,9 +2,14 @@ import React from "react";
 
 import ModSkillCard from "../ModSkillCard/ModSkillCard";
 import reactImage from "../assets/images/react-icon.png";
+import Down from "../Common/Down";
 import "./SkillSet.css";
 
 class SkillSet extends React.Component {
+  propDown = () => {
+    this.props.handleClick();
+  };
+
   render() {
     return (
       <div>
@@ -48,6 +53,9 @@ class SkillSet extends React.Component {
                   <h4 id="angular">Angular</h4>
                 </div>
               </div>
+              {/* <div id="arrowDown">
+                <Down click={this.propDown} />
+              </div> */}
               {/* <div class="col-full skill-container">
                 <h3>Most frequently used tools</h3>
               </div>
