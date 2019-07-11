@@ -11,17 +11,27 @@ import { withStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 325,
-    margin: 35,
-    maxHeight: 300
+    maxWidth: 200,
+    margin: "0 auto",
+    maxHeight: 325,
+    borderRadius: 10,
+    display: "inline-block",
+    float: "left",
+    padding: "25px",
+    margin: "50px",
+    background: "#ffffff"
   },
   media: {
-    height: 150,
-    width: 150,
+    height: 200,
+    width: 200,
     margin: 10,
     display: "block",
     marginLeft: "auto",
-    marginRight: "auto"
+    marginRight: "auto",
+    borderRadius: "50%"
+  },
+  image: {
+    borderRadius: "50%"
   }
 });
 
@@ -37,14 +47,14 @@ export default function ModCard(props) {
           image={image}
           title="Contemplative Reptile"
         />
-        <CardContent>
+        {/* <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {content}
           </Typography>
-        </CardContent>
+        </CardContent> */}
       </CardActionArea>
       {/* <CardActions>
         <Button size="small" color="primary">

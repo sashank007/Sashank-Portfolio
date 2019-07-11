@@ -6,3 +6,34 @@ b {
   color: #2f2f2f;
   font-family: roboto;
 }
+
+#code {
+  height: 100px;
+  width: 100px;
+}
+
+#name {
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  margin-top: 0;
+}
+
+#intro {
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  margin-bottom: 0;
+}
+/* 
+.enxLer {
+  font-size: 80px;
+  line-height: 1.1;
+  margin: 0px;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}

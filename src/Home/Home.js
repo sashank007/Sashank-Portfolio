@@ -8,7 +8,8 @@ import TopAppBar from "../TopAppBar/TopAppBar";
 import Ensemble from "../Ensemble/Ensemble";
 import ModVerticalStepper from "../ModVerticalStepper/ModVerticalStepper";
 import ReactFullpage from "@fullpage/react-fullpage";
-
+// import CodeIcon from "../assets/images/code.png";
+import CodeIcon from "../Common/Code";
 import "./Home.css";
 
 class Home extends Component {
@@ -28,8 +29,13 @@ class Home extends Component {
       <div>
         {/* {showIntro ? null : ( */}
         <div className="landingPage">
+          {/* <img src={CodeIcon} id="code" /> */}
+          <CodeIcon />
+          <p id="intro">Hello, my name is</p>
+          <h1 id="name">Sashank Tungaturthi. </h1>
           <h2 id="mainHeader">
-            Dive into <b id="sashankName">Sashank's</b> World.
+            Wanna know <b id="sashankName">Me</b> better?
+            {/* <b id="sashankName">Sashank's</b> World. */}
           </h2>
           <CustomButton handleclick={this.handleClick} />
         </div>

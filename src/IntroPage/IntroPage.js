@@ -11,6 +11,7 @@ import designImage from "../assets/images/layers.png";
 import codeImage from "../assets/images/data.png";
 import listenerImage from "../assets/images/listener.png";
 import engineerImage from "../assets/images/engineer.png";
+import dp from "../assets/images/dp.jpeg";
 import Grow from "@material-ui/core/Grow";
 import Collapse from "@material-ui/core/Grow";
 import "./IntroPage.css";
@@ -31,14 +32,20 @@ class IntroPage extends React.Component {
       <div class="root">
         <Collapse in={true}>
           <div>
-            <h1 class="about">ABOUT</h1>
-            <h4>
-              Hi, I'm a Full-Stack Software Engineer who is currently pursuing
-              my Masters in Computer Science. I am majorly interested in
-              Engineering applications and design both in the front-end and the
-              back-end.
-            </h4>
-            <div class="cards">
+            <h2 class="about">ABOUT</h2>
+            <div style={{ background: "#f08b65" }} class="centered line" />
+            <ModCard class="myCard" image={dp} />
+            <div class="textContent">
+              <p>
+                Hi, I'm Sashank, a Full-Stack Software Engineer who is currently
+                pursuing my Masters in Computer Science. I am majorly interested
+                in Engineering applications and design both in the front-end and
+                the back-end. Looking for opportunities to further enhance my
+                skill-set and creating amazing products to help the world a
+                better place!
+              </p>
+            </div>
+            {/* <div class="cards">
               <ModCard
                 title="Robust Code"
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -59,7 +66,7 @@ class IntroPage extends React.Component {
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 image={engineerImage}
               />
-            </div>
+            </div> */}
           </div>
         </Collapse>
       </div>

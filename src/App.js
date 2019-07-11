@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import Home from "./Home/Home";
 import Responsive from "./Responsive/Responsive";
 import Scrolling from "./FullPage/Scrolling";
+import Test from "./Test/Test";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <Home /> */}
         <Scrolling />
+        {/* <Test /> */}
       </header>
     </div>
   );

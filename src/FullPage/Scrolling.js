@@ -13,6 +13,9 @@ const Scrolling = () => (
             <Home handleClick={() => fullpageApi.moveSectionDown()} />
           </div>
           <div className="section">
+            <IntroPage />
+          </div>
+          <div className="section">
             <SkillSet />
           </div>
         </ReactFullpage.Wrapper>
