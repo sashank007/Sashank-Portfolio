@@ -17,7 +17,7 @@
   display: block;
   text-align: center;
   letter-spacing: 0.1em; */
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  /* font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 10;
   letter-spacing: 0.1em;
@@ -28,7 +28,16 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1em; */
+  font-family: "eurostile", sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: #0f1025;
+  /* text-transform: uppercase; */
+  display: block;
+  text-align: center;
 }
 
 .container {

@@ -35,7 +35,7 @@ class IntroPage extends React.Component {
     return (
       <div class="root">
         <div>
-          <h2 class="about">ABOUT</h2>
+          <h2 class="about">About</h2>
           <div style={{ background: "#f08b65" }} class="centered line" />
           <div id="card">
             <ModCard class="myCard" image={dp} />

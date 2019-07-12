@@ -4,7 +4,7 @@
 }
 
 .about {
-  color: #0f1025;
+  /* color: #0f1025;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 10;
@@ -17,7 +17,16 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1em; */
+  font-family: "eurostile", sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: #0f1025;
+  /* text-transform: uppercase; */
+  display: block;
+  text-align: center;
 }
 
 .cards {
@@ -45,7 +54,7 @@ h4 {
 
 .line {
   display: block;
-  width: 290px;
+  width: 300px;
   height: 3px;
   padding: 0 !important;
   background: #ccc;

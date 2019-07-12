@@ -13,7 +13,7 @@ class SkillSet extends React.Component {
   render() {
     return (
       <div>
-        <h2 class="title">SkillSet </h2>
+        <h2 class="title">Skill Set </h2>
         <div style={{ background: "#f08b65" }} class="centered line" />
         <div class="cards">
           <div class="container">
@@ -53,9 +53,9 @@ class SkillSet extends React.Component {
                   <h4 id="angular">Angular</h4>
                 </div>
               </div>
-              {/* <div id="arrowDown">
+              <div id="arrowDown">
                 <Down click={this.propDown} />
-              </div> */}
+              </div>
               {/* <div class="col-full skill-container">
                 <h3>Most frequently used tools</h3>
               </div>
