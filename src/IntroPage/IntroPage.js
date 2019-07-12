@@ -33,14 +33,14 @@ class IntroPage extends React.Component {
     const { checked } = this.state;
 
     return (
-      <div class="root">
+      <div className="root">
         <div>
-          <h2 class="about">ABOUT</h2>
-          <div style={{ background: "#f08b65" }} class="centered line" />
+          <h2 className="about">ABOUT</h2>
+          <div style={{ background: "#f08b65" }} className="centered line" />
           <div id="card">
-            <ModCard class="myCard" image={dp} />
+            <ModCard className="myCard" image={dp} />
           </div>
-          <div class="textContent">
+          <div className="textContent">
             <p id="para">
               Hi, I'm Sashank, a Full-Stack Software Engineer who is currently
               pursuing my Masters in Computer Science. I am majorly interested

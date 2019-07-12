@@ -82,7 +82,7 @@ b {
     top: 100%;
   }
   100% {
-    top: 85%;
+    top: 90%;
   }
 }
 @keyframes fade-in-bottom-text {
@@ -153,7 +153,7 @@ hr {
   border: none;
   position: absolute;
   right: 0;
-  top: 85%;
+  top: 90%;
   transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0s;
   border-left: 1px solid #e47f53;

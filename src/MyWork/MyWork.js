@@ -7,69 +7,69 @@ import "./MyWork.css";
 const MyWork = ({}) => {
   useEffect(() => {}, []);
   return (
-    <div class="clearfix">
+    <div className="clearfix">
       <h2 id="titleWork">My Recent Work</h2>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="react" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>React</span>
         </div>
-        {/* <div class="corner-ribbon  sticky red shadow">Hello</div> */}
+        {/* <div className="corner-ribbon  sticky red shadow">Hello</div> */}
 
-        <div class="desc-text">Project Description</div>
-        <div class="middle">
+        <div className="desc-text">Project Description</div>
+        <div className="middle">
           <img src={GitHubIcon} />
-          <div class="text">Go To Github Repo</div>
+          <div className="text">Go To Github Repo</div>
         </div>
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="android" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Java</span>
         </div>
-        <div class="middle">
+        <div className="middle">
           <img src={GitHubIcon} />
-          <div class="text">Go To Github Repo</div>
+          <div className="text">Go To Github Repo</div>
         </div>
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="npm" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Javascript</span>
         </div>
-        <div class="middle">
+        <div className="middle">
           <img src={GitHubIcon} />
-          <div class="text">Go To Github Repo</div>
+          <div className="text">Go To Github Repo</div>
         </div>
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="graphql" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Javascript</span>
         </div>
-        <div class="middle">
+        <div className="middle">
           <img src={GitHubIcon} />
-          <div class="text">Go To Github Repo</div>
+          <div className="text">Go To Github Repo</div>
         </div>
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="python" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Python</span>
         </div>
-        <div class="middle">
+        <div className="middle">
           <img src={GitHubIcon} />
-          <div class="text">Go To Github Repo</div>
+          <div className="text">Go To Github Repo</div>
         </div>
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="js" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Javascript</span>
         </div>
-        <div class="middle">
+        <div className="middle">
           <img src={GitHubIcon} />
-          <div class="text">Go To Github Repo</div>
+          <div className="text">Go To Github Repo</div>
         </div>
       </div>
     </div>
