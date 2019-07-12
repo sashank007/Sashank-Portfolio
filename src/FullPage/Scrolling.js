@@ -3,6 +3,7 @@ import Home from "../Home/Home";
 import IntroPage from "../IntroPage/IntroPage";
 import SkillSet from "../SkillSet/SkillSet";
 import ReactFullpage from "@fullpage/react-fullpage";
+import MyWork from "../MyWork/MyWork";
 
 const Scrolling = () => (
   <ReactFullpage
@@ -17,6 +18,9 @@ const Scrolling = () => (
           </div>
           <div className="section">
             <SkillSet handleClick={() => fullpageApi.moveSectionDown()} />
+          </div>
+          <div className="section">
+            <MyWork handleClick={() => fullpageApi.moveSectionDown()} />
           </div>
         </ReactFullpage.Wrapper>
       );

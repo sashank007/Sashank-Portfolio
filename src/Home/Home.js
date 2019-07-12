@@ -29,6 +29,17 @@ class Home extends Component {
     return (
       <div>
         {/* {showIntro ? null : ( */}
+        <div className="social">
+          <span id="email">
+            <a
+              href="mailto:sashank.tungaturthi@gmail.com?Subject=Hello"
+              target="_top"
+            >
+              sashank.tungaturthi@gmail.com
+            </a>
+          </span>
+        </div>
+        <hr />
         <div className="landingPage">
           {/* <img src={CodeIcon} id="code" /> */}
           <CodeIcon />
@@ -40,7 +51,10 @@ class Home extends Component {
             {/* <b id="sashankName">Sashank's</b> World. */}
           </h2>
 
-          <CustomButton handleclick={this.handleClick} />
+          <CustomButton
+            className="customButton"
+            handleclick={this.handleClick}
+          />
         </div>
         {/* )} */}
         {/* {showIntro ? (

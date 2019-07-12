@@ -1,3 +1,8 @@
-.CustomButton {
-  color: white;
+.root {
+  background: "linear-gradient(45deg,  #f46b45 30%, #eea849 90%)";
+  border-radius: 3;
+  border: 0;
+  color: "white";
+  height: 48;
+  padding: "0 30px";
 }

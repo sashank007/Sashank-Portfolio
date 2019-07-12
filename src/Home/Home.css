@@ -5,6 +5,7 @@ b {
 #mainHeader {
   color: #2f2f2f7d;
   font-family: roboto;
+  animation: fade-in-right ease 1.5s forwards;
 }
 
 #code {
@@ -16,24 +17,151 @@ b {
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
     BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   margin-top: 0;
+  animation: fade-in-right ease 1.2s forwards;
 }
 
 #intro {
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
     BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   margin-bottom: 0;
+  animation: fade-in-right ease 1s forwards;
+}
+
+.sideLine {
+  border-left: 2px solid black;
+  height: 500px;
+}
+
+.customButton {
+  animation: changeColor 1s ease;
+}
+
+@keyframes changeColor {
+  from {
+    background: "#ffffff";
+  }
+  to {
+    background: "linear-gradient(45deg,  #f46b45 30%, #eea849 90%)";
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow-left {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 85%;
+  }
+}
+@keyframes fade-in-bottom-text {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 60%;
+  }
+}
+#social {
+  position: fixed;
+  left: 0;
+  width: 40px;
+  text-align: left;
+  height: auto;
+  top: 200px;
+  z-index: 3000;
+  background: transparent;
+}
+
+#social li {
+  margin: 20px 5px;
+  list-style: none;
+  font-size: 13px;
+}
+
+#social li a,
+#social li a:visited {
+  color: #0f191b;
+  padding: 0 0px;
+}
+
+#social li a:hover,
+#social li a:visited:hover {
+  color: #33ba9f;
+}
+
+.social {
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 60%;
+  /* animation-delay: 6s; */
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0s;
+  animation: fade-in-bottom-text 1.75s ease;
+  right: 3.5%;
+  color: #0f191b;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #0f191bb4;
+}
+a:hover {
+  color: #e47e539f;
 }
 /* 
-.enxLer {
-  font-size: 80px;
-  line-height: 1.1;
-  margin: 0px;
+.landingPage {
+  border-right: 1px solid black;
 } */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 600;
+hr {
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 85%;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0s;
+  border-left: 1px solid #e47f53;
+  height: 100vh;
+  width: 1px;
+  display: inline;
+  position: absolute;
+  right: 4%;
+
+  animation: fade-in-bottom 2s ease;
 }
