@@ -7,12 +7,12 @@ import "./MyWork.css";
 const MyWork = ({}) => {
   useEffect(() => {}, []);
   return (
-    <div class="clearfix">
+    <div className="clearfix">
       <h2 id="titleWork">My Recent Work</h2>
       <div style={{ background: "#f08b65" }} class="centered line" />
       <div class="img-container">
         <img id="workImage" src={codeImage} alt="react" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>React</span>
         </div>
 
@@ -29,8 +29,8 @@ const MyWork = ({}) => {
         </div> */}
       </div>
       <div class="img-container">
-        <img id="workImage" src={codeImage} alt="android" />
-        <div class="ribbon">
+        <img id="workImage" src={codeImage} alt="java" />
+        <div className="ribbon">
           <span>Java</span>
         </div>
 
@@ -41,14 +41,10 @@ const MyWork = ({}) => {
             github link.
           </span>
         </div>
-        {/* <div class="middle">
-          <img src={GitHubIcon} />
-          <div class="text">Go To Github Repo</div>
-        </div> */}
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="npm" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Javascript</span>
         </div>
 
@@ -64,9 +60,9 @@ const MyWork = ({}) => {
           <div class="text">Go To Github Repo</div>
         </div> */}
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="graphql" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Javascript</span>
         </div>
 
@@ -82,9 +78,9 @@ const MyWork = ({}) => {
           <div class="text">Go To Github Repo</div>
         </div> */}
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="python" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Python</span>
         </div>
 
@@ -100,9 +96,9 @@ const MyWork = ({}) => {
           <div class="text">Go To Github Repo</div>
         </div> */}
       </div>
-      <div class="img-container">
+      <div className="img-container">
         <img id="workImage" src={codeImage} alt="js" />
-        <div class="ribbon">
+        <div className="ribbon">
           <span>Javascript</span>
         </div>
 

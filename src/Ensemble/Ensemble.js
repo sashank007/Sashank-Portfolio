@@ -8,15 +8,7 @@ import Work from "../Work/Work";
 
 class Ensemble extends React.Component {
   render() {
-    return (
-      <div>
-        {/* <TopAppBar /> */}
-        <IntroPage />
-        <SkillSet />
-        <Work />
-        <Contact />
-      </div>
-    );
+    return <div>{/* <TopAppBar /> */}</div>;
   }
 }
 
