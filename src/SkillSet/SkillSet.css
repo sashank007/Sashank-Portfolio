@@ -29,7 +29,8 @@
   display: block;
   text-align: center;
   letter-spacing: 0.1em; */
-  font-family: "eurostile", sans-serif;
+  /* font-family: "eurostile", sans-serif; */
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.5em;
   font-weight: 800;
   margin: 0 0 15px 0;

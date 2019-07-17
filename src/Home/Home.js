@@ -53,6 +53,7 @@ class Home extends Component {
 
           <CustomButton
             className="customButton"
+            title="Let's Go!"
             handleclick={this.handleClick}
           />
         </div>

@@ -4,7 +4,12 @@ import IntroPage from "../IntroPage/IntroPage";
 import SkillSet from "../SkillSet/SkillSet";
 import ReactFullpage from "@fullpage/react-fullpage";
 import MyWork from "../MyWork/MyWork";
-
+import RadarChart from "../RadarChart/RadarChart";
+import BehavioralRadar from "../BehavioralRadar/BehavioralRadar";
+import WordCloud from "../Common/WordCloud";
+import Contact from "../Contact/Contact";
+import Charts from "../Charts/Charts";
+import ChartsTab from "../Tab/Tab";
 const Scrolling = () => (
   <ReactFullpage
     render={({ state, fullpageApi }) => {
@@ -21,6 +26,12 @@ const Scrolling = () => (
           </div>
           <div className="section">
             <MyWork handleClick={() => fullpageApi.moveSectionDown()} />
+          </div>
+          <div className="section">
+            <ChartsTab handleClick={() => fullpageApi.moveSectionDown()} />
+          </div>
+          <div className="section">
+            <Contact handleClick={() => fullpageApi.moveSectionDown()} />
           </div>
         </ReactFullpage.Wrapper>
       );

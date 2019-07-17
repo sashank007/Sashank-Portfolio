@@ -18,7 +18,8 @@
   display: block;
   text-align: center;
   letter-spacing: 0.1em; */
-  font-family: "eurostile", sans-serif;
+  /* font-family: "eurostile", sans-serif; */
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.5em;
   font-weight: 800;
   margin: 0 0 15px 0;
@@ -48,13 +49,14 @@ h4 {
   height: 100%;
   margin: 25px;
   -webkit-font-smoothing: antialiased;
-  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
-    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-family: "Ropa Sans", sans-serif;
+  /* font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif; */
 }
 
 .line {
   display: block;
-  width: 300px;
+  width: 200px;
   height: 3px;
   padding: 0 !important;
   background: #ccc;
@@ -77,6 +79,7 @@ h4 {
   padding-left: 15%;
   padding-right: 15%;
   margin: auto;
+  font-family: "Ropa Sans", sans-serif;
 }
 
 #downArrow {

@@ -23,14 +23,14 @@ class CustomButton extends React.Component {
     this.props.handleclick(true);
   };
   render() {
-    const { classes, children, className, ...other } = this.props;
+    const { title, classes, children, className, ...other } = this.props;
     return (
       <Button
         onClick={this.handleClick}
         className={clsx(classes.root, className)}
         {...other}
       >
-        {"Let's Go!"}
+        {title}
       </Button>
     );
   }

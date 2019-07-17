@@ -23,7 +23,8 @@
 }
 
 #titleWork {
-  font-family: "eurostile", sans-serif;
+  /* font-family: "eurostile", sans-serif; */
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.5em;
   font-weight: 800;
   margin: 0 0 15px 0;
@@ -38,7 +39,8 @@
   opacity: 1;
   display: block;
   width: 90%;
-  height: auto;
+  height: 225px;
+  /* height: auto; */
   transition: 0.1s ease;
   backface-visibility: hidden;
   border-radius: 12px;

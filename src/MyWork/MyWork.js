@@ -2,6 +2,10 @@ import React, { useEffect } from "react";
 import { withStyles } from "@material-ui/core";
 import codeImage from "../assets/images/code.jpg";
 import GitHubIcon from "../assets/images/GitHub-Mark-32px.png";
+import momTrackerImage from "../assets/images/momtracker.png";
+import graphQLImage from "../assets/images/graphql.png";
+import netflixRouletteImage from "../assets/images/nr_1.PNG";
+import tempeHappeningsImage from "../assets/images/th.PNG";
 import "./MyWork.css";
 
 const MyWork = ({}) => {
@@ -11,9 +15,9 @@ const MyWork = ({}) => {
       <h2 id="titleWork">My Recent Work</h2>
       <div style={{ background: "#f08b65" }} class="centered line" />
       <div class="img-container">
-        <img id="workImage" src={codeImage} alt="react" />
+        <img id="workImage" src={momTrackerImage} alt="react" />
         <div className="ribbon">
-          <span>React</span>
+          <span>Android</span>
         </div>
 
         <div class="details">
@@ -29,9 +33,9 @@ const MyWork = ({}) => {
         </div> */}
       </div>
       <div class="img-container">
-        <img id="workImage" src={codeImage} alt="java" />
+        <img id="workImage" src={tempeHappeningsImage} alt="java" />
         <div className="ribbon">
-          <span>Java</span>
+          <span>GraphQL</span>
         </div>
 
         <div class="details">
@@ -43,7 +47,7 @@ const MyWork = ({}) => {
         </div>
       </div>
       <div className="img-container">
-        <img id="workImage" src={codeImage} alt="npm" />
+        <img id="workImage" src={netflixRouletteImage} alt="npm" />
         <div className="ribbon">
           <span>Javascript</span>
         </div>

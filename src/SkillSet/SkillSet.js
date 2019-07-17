@@ -2,6 +2,17 @@ import React from "react";
 
 import ModSkillCard from "../ModSkillCard/ModSkillCard";
 import reactImage from "../assets/images/react-icon.png";
+import ReactLogo from "../Common/ReactLogo";
+import NodeLogo from "../Common/NodeLogo";
+import AngularLogo from "../Common/AngularLogo";
+import NpmLogo from "../Common/NpmLogo";
+import D3Logo from "../Common/D3Logo";
+import PythonLogo from "../Common/PythonLogo";
+import JavaLogo from "../Common/JavaLogo";
+import FlaskLogo from "../Common/FlaskLogo";
+import WebpackLogo from "../Common/WebpackLogo";
+import GitLogo from "../Common/GitLogo";
+
 import Down from "../Common/Down";
 import "./SkillSet.css";
 
@@ -34,23 +45,36 @@ class SkillSet extends React.Component {
                 </p>
               </div>
               <div className="skill-container">
-                <div className="col-1-5 skill">
-                  <h4 id="javascript">JavaScript</h4>
-                </div>
+                <div className="col-1-5 skill" />
                 <div className="col-1-5 skill ">
-                  <h4 id="node">Node.JS</h4>
+                  <NodeLogo />
                 </div>
                 <div className="col-1-5 skill">
-                  <h4 id="react">React</h4>
+                  <ReactLogo />
                 </div>
                 <div className="col-1-5 skill">
-                  <h4 id="python">Python</h4>
+                  <PythonLogo />
                 </div>
                 <div className="col-1-5 skill">
-                  <h4 id="java">Java</h4>
+                  <JavaLogo />
                 </div>
                 <div className="col-1-5 skill">
-                  <h4 id="angular">Angular</h4>
+                  <AngularLogo />
+                </div>
+                <div className="col-1-5 skill">
+                  <D3Logo />
+                </div>
+                <div className="col-1-5 skill">
+                  <NpmLogo />
+                </div>
+                <div className="col-1-5 skill">
+                  <FlaskLogo />
+                </div>
+                <div className="col-1-5 skill">
+                  <WebpackLogo />
+                </div>
+                <div className="col-1-5 skill">
+                  <GitLogo />
                 </div>
               </div>
               <div id="arrowDown">
