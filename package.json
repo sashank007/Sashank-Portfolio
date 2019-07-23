@@ -7,14 +7,19 @@
     "@material-ui/core": "^4.2.0",
     "@material-ui/icons": "^4.0.1",
     "@material-ui/styles": "^4.2.0",
+    "chart.js": "^2.8.0",
+    "chroma-js": "^2.0.4",
     "color": "^3.1.2",
     "fullpage.js": "^3.0.6",
+    "patternomaly": "^1.3.2",
     "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
     "react-d3-radar": "^1.0.0-rc6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "react-svg-radar-chart": "^1.2.0",
-    "react-typist": "^2.0.5"
+    "react-typist": "^2.0.5",
+    "reaviz": "^2.4.5"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,58 +1,44 @@
-import Radar from "react-d3-radar";
 import React from "react";
-const RadarChart = () => {
-  return (
-    <Radar
-      width={500}
-      height={500}
-      padding={70}
-      domainMax={10}
-      highlighted={null}
-      onHover={point => {
-        if (point) {
-          console.log("hovered over a data point");
-        } else {
-          console.log("not over anything");
-        }
-      }}
-      data={{
-        variables: [
-          { key: "resilience", label: "Resilience" },
-          { key: "strength", label: "Strength" },
-          { key: "adaptability", label: "Adaptability" },
-          { key: "creativity", label: "Creativity" },
-          { key: "openness", label: "Open to Change" },
-          { key: "confidence", label: "Confidence" }
-        ],
-        sets: [
-          {
-            key: "me",
-            label: "My Scores",
-            values: {
-              resilience: 4,
-              strength: 6,
-              adaptability: 7,
-              creativity: 2,
-              openness: 8,
-              confidence: 1
-            }
-          }
-          //   {
-          //     key: "everyone",
-          //     label: "Everyone",
-          //     values: {
-          //       resilience: 10,
-          //       strength: 8,
-          //       adaptability: 6,
-          //       creativity: 4,
-          //       openness: 2,
-          //       confidence: 0
-          //     }
-          //   }
-        ]
-      }}
-    />
-  );
-};
+import { Radar } from "react-chartjs-2";
 
-export default RadarChart;
+export default function RadarChart() {
+  const data = {
+    labels: [
+      "Communicating",
+      "Teamwork",
+      "Problem Solving",
+      "Creativity",
+      "Fast Learning",
+      "Resiliency",
+      "Discipline"
+    ],
+    datasets: [
+      {
+        label: "My Behavior",
+        backgroundColor: "rgb(254, 233, 178,0.2)",
+        borderColor: "rgb(254, 233, 178,1)",
+        pointBackgroundColor: "rgb(254, 233, 178,1)",
+        pointBorderColor: "#fff",
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "rgb(254, 233, 178,1)",
+        data: [85, 83, 81, 90, 77, 80, 65]
+      }
+      // {
+      //   label: "My Second dataset",
+      //   backgroundColor: "rgba(255,99,132,0.2)",
+      //   borderColor: "rgba(255,99,132,1)",
+      //   pointBackgroundColor: "rgba(255,99,132,1)",
+      //   pointBorderColor: "#fff",
+      //   pointHoverBackgroundColor: "#fff",
+      //   pointHoverBorderColor: "rgba(255,99,132,1)",
+      //   data: [28, 48, 40, 19, 96, 27, 100]
+      // }
+    ]
+  };
+
+  return (
+    <div>
+      <Radar data={data} />
+    </div>
+  );
+}

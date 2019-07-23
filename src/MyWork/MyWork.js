@@ -5,17 +5,27 @@ import GitHubIcon from "../assets/images/GitHub-Mark-32px.png";
 import momTrackerImage from "../assets/images/momtracker.png";
 import graphQLImage from "../assets/images/graphql.png";
 import netflixRouletteImage from "../assets/images/nr_1.PNG";
-import tempeHappeningsImage from "../assets/images/th.PNG";
+import tempeHappeningsImage from "../assets/images/th_search.PNG";
+import NpmLogo from "../assets/images/npmLogo.png";
+import Down from "../Common/Down";
 import "./MyWork.css";
 
-const MyWork = ({}) => {
+const MyWork = props => {
+  const propDown = () => {
+    props.handleClick();
+  };
   useEffect(() => {}, []);
   return (
     <div className="clearfix">
       <h2 id="titleWork">My Recent Work</h2>
       <div style={{ background: "#f08b65" }} class="centered line" />
       <div class="img-container">
-        <img id="workImage" src={momTrackerImage} alt="react" />
+        <img
+          className="workImage"
+          id="workImage"
+          src={momTrackerImage}
+          alt="react"
+        />
         <div className="ribbon">
           <span>Android</span>
         </div>
@@ -33,7 +43,12 @@ const MyWork = ({}) => {
         </div> */}
       </div>
       <div class="img-container">
-        <img id="workImage" src={tempeHappeningsImage} alt="java" />
+        <img
+          className="workImage"
+          id="workImage"
+          src={tempeHappeningsImage}
+          alt="java"
+        />
         <div className="ribbon">
           <span>GraphQL</span>
         </div>
@@ -47,7 +62,12 @@ const MyWork = ({}) => {
         </div>
       </div>
       <div className="img-container">
-        <img id="workImage" src={netflixRouletteImage} alt="npm" />
+        <img
+          id="workImage"
+          className="workImage"
+          src={netflixRouletteImage}
+          alt="npm"
+        />
         <div className="ribbon">
           <span>Javascript</span>
         </div>
@@ -65,7 +85,7 @@ const MyWork = ({}) => {
         </div> */}
       </div>
       <div className="img-container">
-        <img id="workImage" src={codeImage} alt="graphql" />
+        <img id="workImage" className="workImage" src={NpmLogo} alt="graphql" />
         <div className="ribbon">
           <span>Javascript</span>
         </div>
@@ -83,7 +103,12 @@ const MyWork = ({}) => {
         </div> */}
       </div>
       <div className="img-container">
-        <img id="workImage" src={codeImage} alt="python" />
+        <img
+          id="workImage"
+          className="workImage"
+          src={codeImage}
+          alt="python"
+        />
         <div className="ribbon">
           <span>Python</span>
         </div>
@@ -101,7 +126,7 @@ const MyWork = ({}) => {
         </div> */}
       </div>
       <div className="img-container">
-        <img id="workImage" src={codeImage} alt="js" />
+        <img id="workImage" className="workImage" src={codeImage} alt="js" />
         <div className="ribbon">
           <span>Javascript</span>
         </div>
@@ -117,6 +142,9 @@ const MyWork = ({}) => {
           <img src={GitHubIcon} />
           <div class="text">Go To Github Repo</div>
         </div> */}
+      </div>
+      <div id="arrowDown">
+        <Down click={propDown} />
       </div>
     </div>
   );

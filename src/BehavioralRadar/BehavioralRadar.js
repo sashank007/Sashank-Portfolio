@@ -38,7 +38,7 @@ const captions = {
 };
 
 const BehavioralRadar = () => {
-  return <RadarChart captions={captions} data={data} size={450} />;
+  return <RadarChart captions={captions} data={data} size={900} />;
 };
 
 export default BehavioralRadar;

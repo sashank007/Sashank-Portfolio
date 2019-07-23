@@ -39,9 +39,10 @@ class SkillSet extends React.Component {
                 <p id="para">
                   I've worked with a wide variety of programming languages. For
                   web applications I use Javascript with the React Framework.
-                  Whenever I need the most performance possible I obviously go
-                  with Java and finally when I am building prototypes or working
-                  on my hobby projects I fall back on Python
+                  Whenever I need the best performance possible I go with Java
+                  and finally when I am working on passion projects, Python is
+                  my go-to language. Here are a set of all the
+                  technologies/languages I am well versed in:
                 </p>
               </div>
               <div className="skill-container">

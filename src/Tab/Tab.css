@@ -1,7 +1,22 @@
 .Tab {
   position: absolute;
   top: 0;
-  margin: 0 auto;
-  margin-left: 30%;
-  margin-top: 4%;
+  margin-top: 0.5vh;
+  width: 67vw;
+  margin-left: 16.5vw;
+}
+
+#appBar {
+  /* background-color: "#ff5000c4"; */
+  /* background: "linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108))"; */
+}
+
+.Tabs-TabContainer {
+  margin: 1.5rem;
+}
+
+#headerCharts {
+  color: #2f2f2fc9;
+  font-family: roboto;
+  /* font-size: 24px; */
 }
