@@ -1,6 +1,6 @@
 import React from "react";
-import { Bar, Doughnut } from "react-chartjs-2";
-import pattern from "patternomaly";
+import { Doughnut } from "react-chartjs-2";
+
 export default function DonutSkillSet() {
   const data = {
     labels: ["Javascript", "Python", "Java", "CSS"],
@@ -8,12 +8,6 @@ export default function DonutSkillSet() {
       {
         data: [300, 240, 220, 230],
         backgroundColor: ["#cf455c", "#ffdd67", "#ff8a5c", "#444444"],
-        // backgroundColor: [
-        //   pattern.draw("square", "#cf455c"),
-        //   pattern.draw("circle", "#ffdd67"),
-        //   pattern.draw("diamond", "#ff8a5c"),
-        //   pattern.draw("triangle", "#444444")
-        // ],
         hoverBackgroundColor: ["#cf455c", "#ffdd67", "#ff8a5c", "#444444"]
       }
     ]

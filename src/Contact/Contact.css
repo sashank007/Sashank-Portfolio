@@ -8,6 +8,38 @@
   animation-iteration-count: infinite;
 }
 
+.form-container {
+  width: 500px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.form-container input {
+  width: 100%;
+  clear: both;
+  font-family: "mono-sans";
+}
+#subject-contact {
+  width: 450px;
+  padding: 10px;
+  margin: 5px;
+  resize: none;
+  font-family: "mono-sans";
+}
+#ta-body {
+  width: 450px;
+  padding: 10px;
+  margin: 5px;
+  resize: none;
+  font-family: "mono-sans";
+}
+
+#email-contact {
+  width: 450px;
+  padding: 10px;
+  font-family: "mono-sans";
+  margin: 15px;
+}
 @keyframes hvr-buzz {
   50% {
     -webkit-transform: translateY(4px) rotate(2deg);

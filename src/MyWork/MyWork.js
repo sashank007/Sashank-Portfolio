@@ -7,6 +7,7 @@ import graphQLImage from "../assets/images/graphql.png";
 import netflixRouletteImage from "../assets/images/nr_1.PNG";
 import tempeHappeningsImage from "../assets/images/th_search.PNG";
 import NpmLogo from "../assets/images/npmLogo.png";
+import Sassy from "../assets/images/sassy_page2.PNG";
 import Down from "../Common/Down";
 import "./MyWork.css";
 
@@ -103,12 +104,7 @@ const MyWork = props => {
         </div> */}
       </div>
       <div className="img-container">
-        <img
-          id="workImage"
-          className="workImage"
-          src={codeImage}
-          alt="python"
-        />
+        <img id="workImage" className="workImage" src={Sassy} alt="python" />
         <div className="ribbon">
           <span>Python</span>
         </div>
