@@ -35,7 +35,7 @@ const Contact = () => {
       <div className="form-container">
         <form>
           <input
-            placeholder="email"
+            placeholder="email..."
             ref={emailRef}
             type="text"
             id="email-contact"

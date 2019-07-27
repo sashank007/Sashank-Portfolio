@@ -41,8 +41,8 @@ class SkillSet extends React.Component {
                   web applications I use Javascript with the React Framework.
                   Whenever I need the best performance possible I go with Java
                   and finally when I am working on passion projects, Python is
-                  my go-to language. Here are a set of all the
-                  technologies/languages I am well versed in:
+                  my go-to language. Here are the set of technologies/languages
+                  I am well versed in
                 </p>
               </div>
               <div className="skill-container">

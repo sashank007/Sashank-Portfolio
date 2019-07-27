@@ -12,11 +12,12 @@
 }
 
 .Tabs-TabContainer {
-  margin: 1.5rem;
+  margin-top: -2.5rem;
+  padding: 4rem;
 }
 
 #headerCharts {
-  color: #2f2f2fc9;
+  color: #2d2b2b;
   font-family: roboto;
   /* font-size: 24px; */
 }

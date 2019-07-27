@@ -62,7 +62,8 @@ const ChartsTab = props => {
           // background:
           //   "linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108))",
           background:
-            "linear-gradient(to right, rgb(255, 179, 71), rgb(255, 204, 51))",
+            // "linear-gradient(to right, rgb(255, 179, 71), rgb(255, 204, 51))",
+            "#ffae57",
           color: "white",
           borderRadius: "5px"
         }}
