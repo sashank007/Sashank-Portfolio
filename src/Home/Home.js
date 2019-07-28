@@ -28,7 +28,6 @@ class Home extends Component {
     const { classes } = this.props;
     return (
       <div>
-        {/* {showIntro ? null : ( */}
         <div className="social">
           <span id="email">
             <a

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { withStyles } from "@material-ui/core";
 import codeImage from "../assets/images/code.jpg";
-import GitHubIcon from "../assets/images/GitHub-Mark-32px.png";
+import GitHubIcon from "../assets/images/github-icon.png";
 import momTrackerImage from "../assets/images/momtracker.png";
 import graphQLImage from "../assets/images/graphql.png";
 import netflixRouletteImage from "../assets/images/nr_1.PNG";
@@ -10,6 +10,7 @@ import NpmLogo from "../assets/images/npmLogo.png";
 import Sassy from "../assets/images/sassy_page2.PNG";
 import Down from "../Common/Down";
 import cheatSheetImage from "../assets/images/CheatSheet.PNG";
+
 import "./MyWork.css";
 
 const momTrackerUrl = "https://github.com/sashank007/Mom-Tracker";
