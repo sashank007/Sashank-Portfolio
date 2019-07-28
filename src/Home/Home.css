@@ -192,14 +192,3 @@ hr {
 
   animation: fade-in-bottom 2s ease;
 }
-/* 
-.social::after {
-  content: "";
-  display: block;
-  width: 1px;
-
-  height: 300px;
-  background-color: #e47f53;
-  margin: 0 auto;
-  animation: fade-in-bottom 4s ease;
-} */
