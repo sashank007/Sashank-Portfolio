@@ -29,9 +29,6 @@ const useStyles = makeStyles({
     marginLeft: "auto",
     marginRight: "auto",
     borderRadius: "50%"
-  },
-  image: {
-    borderRadius: "50%"
   }
 });
 

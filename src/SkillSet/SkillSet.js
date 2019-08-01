@@ -42,8 +42,8 @@ class SkillSet extends React.Component {
                   web applications I use Javascript with the React Framework.
                   Whenever I need the best performance possible I go with C++ or
                   Java and finally when I am working on passion projects, Python
-                  is my go-to language. I am also currently learning Rust and
-                  compiling it to Web Assembly. Here are the set of
+                  is my go-to language. I am also currently learning Rust to add
+                  to my arsenal of skills. Here are the set of
                   technologies/languages I am well versed in
                 </p>
               </div>

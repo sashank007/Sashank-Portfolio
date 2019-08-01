@@ -78,9 +78,9 @@ const MyWork = props => {
           alt="react"
           onClick={handleWorkClick}
         />
-        <div className="ribbon">
+        {/* <div className="ribbon">
           <span>Android</span>
-        </div>
+        </div> */}
 
         <div className="details" onClick={handleWorkClick}>
           <span id="titleProject" className="momTracker">
@@ -107,9 +107,9 @@ const MyWork = props => {
           onClick={handleWorkClick}
         />
 
-        <div className="ribbon">
+        {/* <div className="ribbon">
           <span>GraphQL</span>
-        </div>
+        </div> */}
 
         <div class="details" onClick={handleWorkClick}>
           <span id="titleProject" className="tempeHappenings">
@@ -130,9 +130,9 @@ const MyWork = props => {
           href={netflixRouletteUrl}
           onClick={handleWorkClick}
         />
-        <div className="ribbon">
+        {/* <div className="ribbon">
           <span>Node</span>
-        </div>
+        </div> */}
 
         <div class="details" onClick={handleWorkClick}>
           <span id="titleProject" className="netflixRoulette">
@@ -156,9 +156,9 @@ const MyWork = props => {
           src={NpmLogo}
           alt="graphql"
         />
-        <div className="ribbon">
+        {/* <div className="ribbon">
           <span>Javascript</span>
-        </div>
+        </div> */}
 
         <div class="details" onClick={handleWorkClick}>
           <span id="titleProject" className="npmLib">
@@ -183,9 +183,9 @@ const MyWork = props => {
           href={sassyUrl}
           alt="python"
         />
-        <div className="ribbon">
+        {/* <div className="ribbon">
           <span>VSCode</span>
-        </div>
+        </div> */}
 
         <div class="details" onClick={handleWorkClick}>
           <span id="titleProject" className="sassy">
@@ -208,9 +208,9 @@ const MyWork = props => {
           src={cheatSheetImage}
           alt="js"
         />
-        <div className="ribbon">
+        {/* <div className="ribbon">
           <span>Javascript</span>
-        </div>
+        </div> */}
 
         <div class="details" onClick={handleWorkClick}>
           <span id="titleProject" className="cheatsheet">

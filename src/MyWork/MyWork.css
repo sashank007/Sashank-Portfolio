@@ -12,7 +12,7 @@
 
 .clearfix {
   box-sizing: border-box;
-  margin: 4%;
+  margin: 6%;
 }
 
 .clearfix::after {
@@ -38,6 +38,7 @@
   opacity: 1;
   display: block;
   width: 25.5vw;
+  box-shadow: 10px 10px 5px grey;
   height: 215px;
   /* height: auto; */
   transition: 0.1s ease;

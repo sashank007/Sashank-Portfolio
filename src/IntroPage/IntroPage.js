@@ -1,7 +1,8 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import ModCard from "../ModCard/ModCard";
-import dp from "../assets/images/dp.jpeg";
+import dp from "../assets/images/dp-01.jpeg";
+import dp_color from "../assets/images/dp-02.jpeg";
 import Down from "../Common/Down";
 import "./IntroPage.css";
 class IntroPage extends React.Component {
@@ -26,7 +27,7 @@ class IntroPage extends React.Component {
           <h2 class="about">About</h2>
           <div style={{ background: "#f08b65" }} class="centered line" />
           <div id="card">
-            <ModCard className="myCard" image={dp} />
+            <ModCard className="myCard" image={dp_color} />
           </div>
           <div className="textContent">
             <p id="para">
