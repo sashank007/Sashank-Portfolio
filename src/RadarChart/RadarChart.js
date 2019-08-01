@@ -21,7 +21,7 @@ export default function RadarChart() {
         pointBorderColor: "#fff",
         pointHoverBackgroundColor: "#fff",
         pointHoverBorderColor: "rgb(254, 233, 178,1)",
-        data: [85, 83, 81, 90, 77, 80, 65]
+        data: [95, 65, 97, 75, 85, 72, 55]
       }
       // {
       //   label: "My Second dataset",
@@ -35,10 +35,19 @@ export default function RadarChart() {
       // }
     ]
   };
+  var options = {
+    // All of my other bar chart option here
+    scale: {
+      // beginAtZero: true,
+      ticks: {
+        // beginAtZero: true
+      }
+    }
+  };
 
   return (
     <div>
-      <Radar data={data} />
+      <Radar data={data} options={options} />
     </div>
   );
 }

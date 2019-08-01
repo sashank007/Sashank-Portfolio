@@ -1,23 +1,56 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
+import { withStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import { purple } from "@material-ui/core/colors";
 import Tab from "@material-ui/core/Tab";
 import AppBar from "@material-ui/core/AppBar";
 import PropTypes from "prop-types";
-import Icon from "@material-ui/core/Icon";
 import Typography from "@material-ui/core/Typography";
+import Switch from "@material-ui/core/Switch";
 
 import Down from "../Common/Down";
 import RadarChart from "../RadarChart/RadarChart";
-// import SkillChart from "../SkillChart/SkillChart";
-import SkillDistributionChart from "../SkillDistributionChart/SkillDistributionChart";
 import "./Tab.css";
 import DonutSkillSet from "../DonutSkillSet/DonutSkillSet";
-import BubbleSkillChart from "../BubbleSkillChart/BubbleSkillChart";
 import PolarAreaSkillChart from "../PolarAreaSkillChart/PolarAreaSkillChart";
-import { Radar } from "react-chartjs-2";
+import { Radar, HorizontalBar } from "react-chartjs-2";
 import Paper from "@material-ui/core/Paper";
+import SkillsHorizontalChart from "../SkillsHorizontalChart/SkillsHorizontalChart";
 
+// const PurpleSwitch = withStyles({
+//   switchBase: {
+//     "&$checked": {
+//       color: "#fff",
+//       "& + $track": {
+//         backgroundColor: "#52d869",
+//         opacity: 1,
+//         border: "none"
+//       }
+//     },
+//     "&$focusVisible $thumb": {
+//       color: "#52d869",
+//       border: "6px solid #fff"
+//     }
+//   },
+//   // switchBase: {
+//   //   color: "rgba(255, 174, 87, 0.86)",
+//   //   "&$checked": {
+//   //     color: "rgba(255, 174, 87, 1)"
+//   //   },
+//   //   "&$checked + $track": {
+//   //     backgroundColor: "rgba(255, 174, 87, 1)"
+//   //   }
+//   // },
+//   // MuiTypography: {
+//   //   root: {
+//   //     fontWeight: "200"
+//   //   }
+//   // },
+//   checked: {},
+//   track: {}
+// })(Switch);
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -25,6 +58,64 @@ function TabContainer(props) {
     </Typography>
   );
 }
+
+const IOSSwitch = withStyles(theme => ({
+  // root: {
+  //   width: 21,
+  //   height: 13,
+  //   padding: 2,
+  //   margin: theme.spacing(1)
+  // },
+  MuiTypography: {
+    fontWeight: "200",
+    body1: {
+      fontWeight: "200"
+    }
+  },
+  switchBase: {
+    // padding: 1,
+    "&$checked": {
+      color: theme.palette.common.white,
+      "& + $track": {
+        backgroundColor: "rgba(255, 174, 87, 1)",
+        opacity: 1,
+        border: "none"
+      }
+    },
+    "&$focusVisible $thumb": {
+      color: "rgba(255, 174, 87, 1)",
+      border: "6px solid #fff"
+    }
+  },
+  // thumb: {
+  //   width: 12,
+  //   height: 12
+  // },
+  track: {
+    // borderRadius: 13 / 2,
+    border: `1px solid ${theme.palette.grey[400]}`,
+    backgroundColor: theme.palette.grey[50],
+    opacity: 1,
+    transition: theme.transitions.create(["background-color", "border"])
+  },
+  checked: {},
+  focusVisible: {}
+}))(({ classes, ...props }) => {
+  return (
+    <Switch
+      focusVisibleClassName={classes.focusVisible}
+      disableRipple
+      classes={{
+        root: classes.root,
+        switchBase: classes.switchBase,
+        thumb: classes.thumb,
+        track: classes.track,
+        checked: classes.checked
+      }}
+      {...props}
+    />
+  );
+});
 
 TabContainer.propTypes = {
   children: PropTypes.node.isRequired
@@ -35,14 +126,18 @@ const ChartsTab = props => {
     props.handleClick();
   };
 
+  const [switchLabel, setLabelSwitch] = useState("I love pies");
   const [index, onChange] = useState(0);
   const [test, setTest] = useState({ x: "a", a: "t", y: "b" });
+  const [checkedButton, setCheckedButton] = useState(false);
 
-  console.log("old state : ", test);
-
-  const testHandle = () => {
-    setTest({ ...test, a: "c" });
-    console.log("new state:", test);
+  const handleCheck = () => {
+    setCheckedButton(!checkedButton);
+    if (!checkedButton) {
+      setLabelSwitch("I love bars");
+    } else {
+      setLabelSwitch("I love pies");
+    }
   };
 
   return (
@@ -50,13 +145,6 @@ const ChartsTab = props => {
       <h3 id="headerCharts">
         Here are a few charts, cause who doesn't love charts?!
       </h3>
-      {/* <Tabs centered value={index} onChange={(e, val) => onChange(val)}>
-        <Tab label="Behavior" disableRipple />
-
-        <Tab label="Skill Distribution" disableRipple />
-        {/* <Tab label="" disableRipple /> */}
-      {/* <Tab label="Tagged" disableRipple /> */}
-      {/* </Tabs> */}
       <AppBar
         style={{
           // background:
@@ -67,30 +155,34 @@ const ChartsTab = props => {
           color: "white",
           borderRadius: "5px"
         }}
-        onClick={testHandle}
         position={"static"}
       >
         <Tabs value={index} onChange={(e, val) => onChange(val)}>
-          <Tab label="Skills Donut" disableRipple />
-          <Tab label="Skills Polar" disableRipple />
+          <Tab label="Programming Languages" disableRipple />
+          <Tab label="Engineering Focus Areas" disableRipple />
           <Tab label="Behavior" disableRipple />
-          {/* <Tab label="Usage" disableRipple /> */}
         </Tabs>
       </AppBar>
       <div className="Tabs-TabContainer">
         {index === 0 && (
           <Paper>
             <TabContainer>
-              {/* <RadarChart /> */}
-              <DonutSkillSet />
+              {checkedButton ? <DonutSkillSet /> : <SkillsHorizontalChart />}
+              <FormControlLabel
+                control={
+                  <IOSSwitch
+                    checked={checkedButton}
+                    onChange={handleCheck}
+                    value="checkedB"
+                  />
+                }
+                style={{ fontWeight: "200" }}
+                label={switchLabel}
+              />
             </TabContainer>
           </Paper>
         )}
-        {/* {index === 1 && (
-          <TabContainer>
-            <SkillDistributionChart />
-          </TabContainer>
-        )} */}
+
         {index === 1 && (
           <Paper>
             <TabContainer>
