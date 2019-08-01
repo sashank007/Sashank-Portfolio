@@ -4,6 +4,7 @@ import Home from "./Home/Home";
 import Responsive from "./Responsive/Responsive";
 import Scrolling from "./FullPage/Scrolling";
 import Test from "./Test/Test";
+import SideNav from "./SideNav/SideNav";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <Home /> */}
+        <SideNav />
         <Scrolling />
         {/* <Test /> */}
       </header>

@@ -12,7 +12,8 @@ import JavaLogo from "../Common/JavaLogo";
 import FlaskLogo from "../Common/FlaskLogo";
 import WebpackLogo from "../Common/WebpackLogo";
 import GitLogo from "../Common/GitLogo";
-
+import CPlusPlusLogo from "../Common/CPlusPlusLogo";
+import RustLogo from "../Common/RustLogo";
 import Down from "../Common/Down";
 import "./SkillSet.css";
 
@@ -39,16 +40,17 @@ class SkillSet extends React.Component {
                 <p id="para">
                   I've worked with a wide variety of programming languages. For
                   web applications I use Javascript with the React Framework.
-                  Whenever I need the best performance possible I go with Java
-                  and finally when I am working on passion projects, Python is
-                  my go-to language. Here are a set of all the
-                  technologies/languages I am well versed in:
+                  Whenever I need the best performance possible I go with C++ or
+                  Java and finally when I am working on passion projects, Python
+                  is my go-to language. I am also currently learning Rust and
+                  compiling it to Web Assembly. Here are the set of
+                  technologies/languages I am well versed in
                 </p>
               </div>
               <div className="skill-container">
                 <div className="col-1-5 skill" />
                 <div className="col-1-5 skill ">
-                  <NodeLogo />
+                  <CPlusPlusLogo />
                 </div>
                 <div className="col-1-5 skill">
                   <ReactLogo />
@@ -63,7 +65,7 @@ class SkillSet extends React.Component {
                   <AngularLogo />
                 </div>
                 <div className="col-1-5 skill">
-                  <D3Logo />
+                  <NodeLogo />
                 </div>
                 <div className="col-1-5 skill">
                   <NpmLogo />
@@ -76,6 +78,12 @@ class SkillSet extends React.Component {
                 </div>
                 <div className="col-1-5 skill">
                   <GitLogo />
+                </div>
+                <div className="col-1-5 skill">
+                  <D3Logo />
+                </div>
+                <div className="col-1-5 skill">
+                  <RustLogo />
                 </div>
               </div>
               <div id="arrowDown">

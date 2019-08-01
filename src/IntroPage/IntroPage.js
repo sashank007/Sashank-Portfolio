@@ -31,11 +31,10 @@ class IntroPage extends React.Component {
           <div className="textContent">
             <p id="para">
               Hi, I'm Sashank, a Full-Stack Software Engineer who is currently
-              pursuing my Masters in Computer Science. I am majorly interested
-              in Engineering applications and designing them both in the
-              front-end and the back-end. Looking for opportunities to further
-              enhance my skill-set and creating amazing products to help make
-              the world a better place!
+              chasing my Masters in Computer Science. I am majorly interested in
+              Engineering applications and designing them both in the front-end
+              and the back-end. I am looking for opportunities to create amazing
+              products to help make the world a better place!
             </p>
           </div>
           <div id="downArrow">

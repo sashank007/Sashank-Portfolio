@@ -17,27 +17,27 @@
 .form-container input {
   width: 100%;
   clear: both;
-  font-family: "mono-sans";
 }
-#subject-contact {
+:last-child #subject-contact {
   width: 450px;
   padding: 10px;
   margin: 5px;
   resize: none;
-  font-family: "mono-sans";
+  font-family: monospace;
 }
 #ta-body {
   width: 450px;
   padding: 10px;
   margin: 5px;
   resize: none;
-  font-family: "mono-sans";
+  font-family: monospace;
 }
 
 #email-contact {
   width: 450px;
   padding: 10px;
-  font-family: "mono-sans";
+  font-family: monospace;
+
   margin: 15px;
 }
 @keyframes hvr-buzz {
