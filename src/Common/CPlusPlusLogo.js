@@ -1,10 +1,11 @@
 import React from "react";
 
-const CPlusPlusLogo = () => {
+const CPlusPlusLogo = props => {
+  let { width, height } = props;
   return (
     <svg
-      width="35px"
-      height="50px"
+      width={width}
+      height={height}
       viewBox="0 0 256 243"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

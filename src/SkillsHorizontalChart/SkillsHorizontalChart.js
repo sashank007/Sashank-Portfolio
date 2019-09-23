@@ -67,7 +67,7 @@ export default function SkillsHorizontalChart() {
   return (
     <div>
       <HorizontalBar
-        style={{ padding: "15px" }}
+        style={{ padding: "15px", width: 300 }}
         options={options}
         data={data}
       />

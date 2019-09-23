@@ -30,7 +30,7 @@ class IntroPage extends React.Component {
             <ModCard className="myCard" image={dp_color} />
           </div>
           <div className="textContent">
-            <p id="para">
+            <p class="intro_para">
               Hi, I'm Sashank, a Full-Stack Software Engineer who is currently
               chasing my Masters in Computer Science. I am majorly interested in
               Engineering applications and designing them both in the front-end

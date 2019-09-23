@@ -1,10 +1,11 @@
 import React from "react";
 
-const PythonLogo = () => {
+const PythonLogo = props => {
+  let { width, height } = props;
   return (
     <svg
-      width="50px"
-      height="50px"
+      width={width}
+      height={height}
       viewBox="0 0 256 255"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

@@ -2,34 +2,7 @@
   display: flex;
 }
 
-.title {
-  /* color: #0f1025;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 10;
-  letter-spacing: 0.1em;
-  margin: 0 0 15px 0;
-  padding: 0;
-
-  font-weight: 300;
-  color: #0f1025;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  letter-spacing: 0.1em; */
-  /* font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
-  font-weight: 10;
-  letter-spacing: 0.1em;
-  margin: 0 0 15px 0;
-  padding: 0;
-  font-weight: 10;
-  color: #0f1025;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  letter-spacing: 0.1em; */
-  /* font-family: "eurostile", sans-serif; */
+.title_skill {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.5em;
   font-weight: 800;
@@ -62,6 +35,7 @@
 }
 .text-center {
   text-align: center;
+  padding: 36px;
 }
 
 .column,
@@ -155,7 +129,7 @@
   color: red;
 }
 
-#para {
+.para_skillset {
   -webkit-font-smoothing: antialiased;
   color: #000000b9;
   line-height: 1.3;
@@ -163,4 +137,29 @@
     BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   font-size: 20px;
   margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .para_skillset {
+    font-size: 0.8rem;
+    /* margin-right: 30px; */
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: center;
+  }
+  .title_skill {
+    margin-top: 30px;
+  }
+  .skill-container {
+    width: 320px;
+    margin-left: 10px;
+  }
+  .text-center {
+    /* padding: 36px; */
+    /* max-width: 320px; */
+    padding-left: 10px;
+  }
+  .carousel {
+    margin: 5%;
+  }
 }

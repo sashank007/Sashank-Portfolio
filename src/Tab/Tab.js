@@ -9,7 +9,16 @@ import AppBar from "@material-ui/core/AppBar";
 import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
 import Switch from "@material-ui/core/Switch";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 import Down from "../Common/Down";
 import RadarChart from "../RadarChart/RadarChart";
 import "./Tab.css";
@@ -19,38 +28,6 @@ import { Radar, HorizontalBar } from "react-chartjs-2";
 import Paper from "@material-ui/core/Paper";
 import SkillsHorizontalChart from "../SkillsHorizontalChart/SkillsHorizontalChart";
 
-// const PurpleSwitch = withStyles({
-//   switchBase: {
-//     "&$checked": {
-//       color: "#fff",
-//       "& + $track": {
-//         backgroundColor: "#52d869",
-//         opacity: 1,
-//         border: "none"
-//       }
-//     },
-//     "&$focusVisible $thumb": {
-//       color: "#52d869",
-//       border: "6px solid #fff"
-//     }
-//   },
-//   // switchBase: {
-//   //   color: "rgba(255, 174, 87, 0.86)",
-//   //   "&$checked": {
-//   //     color: "rgba(255, 174, 87, 1)"
-//   //   },
-//   //   "&$checked + $track": {
-//   //     backgroundColor: "rgba(255, 174, 87, 1)"
-//   //   }
-//   // },
-//   // MuiTypography: {
-//   //   root: {
-//   //     fontWeight: "200"
-//   //   }
-//   // },
-//   checked: {},
-//   track: {}
-// })(Switch);
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -60,12 +37,6 @@ function TabContainer(props) {
 }
 
 const IOSSwitch = withStyles(theme => ({
-  // root: {
-  //   width: 21,
-  //   height: 13,
-  //   padding: 2,
-  //   margin: theme.spacing(1)
-  // },
   MuiTypography: {
     fontWeight: "200",
     body1: {
@@ -126,6 +97,8 @@ const ChartsTab = props => {
     props.handleClick();
   };
 
+  const matches = useMediaQuery("(min-width:600px)");
+
   const [switchLabel, setLabelSwitch] = useState("I love pies");
   const [index, onChange] = useState(0);
   const [test, setTest] = useState({ x: "a", a: "t", y: "b" });
@@ -141,66 +114,116 @@ const ChartsTab = props => {
   };
 
   return (
-    <div className="Tab">
-      <h3 id="headerCharts">
-        Here are a few charts, cause who doesn't love charts?!
-      </h3>
-      <AppBar
-        style={{
-          // background:
-          //   "linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108))",
-          background:
-            // "linear-gradient(to right, rgb(255, 179, 71), rgb(255, 204, 51))",
-            "#ffae57",
-          color: "white",
-          borderRadius: "5px"
-        }}
-        position={"static"}
-      >
-        <Tabs value={index} onChange={(e, val) => onChange(val)}>
-          <Tab label="Programming Languages" disableRipple />
-          <Tab label="Engineering Focus Areas" disableRipple />
-          <Tab label="Behavior" disableRipple />
-        </Tabs>
-      </AppBar>
-      <div className="Tabs-TabContainer">
-        {index === 0 && (
-          <Paper>
-            <TabContainer>
-              {checkedButton ? <DonutSkillSet /> : <SkillsHorizontalChart />}
-              <FormControlLabel
-                control={
-                  <IOSSwitch
-                    checked={checkedButton}
-                    onChange={handleCheck}
-                    value="checkedB"
-                  />
-                }
-                style={{ fontWeight: "200" }}
-                label={switchLabel}
-              />
-            </TabContainer>
-          </Paper>
-        )}
+    <div class="div_root">
+      {!matches ? (
+        <div>
+          <h3 id="headerCharts" style={{ margin: "2%" }}>
+            Here are a few charts, cause who doesn't love charts?!
+          </h3>
+          <div style={{ background: "#f08b65" }} class="centered line" />
+          <CarouselProvider
+            naturalSlideWidth={200}
+            naturalSlideHeight={200}
+            totalSlides={3}
+            style={{ marginTop: "5%" }}
+            class="carousel_chart"
+          >
+            <Slider>
+              <Slide index={0}>
+                <div>
+                  <DonutSkillSet />
+                </div>
+              </Slide>
+              <Slide index={1}>
+                <div>
+                  <SkillsHorizontalChart />
+                </div>
+              </Slide>
+              {/* <Slide index={2}>
+                <div>
+                  <PolarAreaSkillChart />
+                </div>
+              </Slide> */}
+              <Slide index={2}>
+                <div>
+                  <RadarChart />
+                </div>
+              </Slide>
+            </Slider>
+            <ButtonBack>Back</ButtonBack>
+            <ButtonNext>Next</ButtonNext>
+          </CarouselProvider>
+        </div>
+      ) : (
+        <div className="Tab">
+          <h3 id="headerCharts">
+            Here are a few charts, cause who doesn't love charts?!
+          </h3>
 
-        {index === 1 && (
-          <Paper>
-            <TabContainer>
-              <PolarAreaSkillChart />
-            </TabContainer>
-          </Paper>
-        )}
-        {index === 2 && (
-          <Paper>
-            <TabContainer>
-              <RadarChart />
-            </TabContainer>
-          </Paper>
-        )}
-      </div>
-      <div id="arrowDown">
-        <Down click={propDown} />
-      </div>
+          <div>
+            <AppBar
+              style={{
+                // background:
+                //   "linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108))",
+                background:
+                  // "linear-gradient(to right, rgb(255, 179, 71), rgb(255, 204, 51))",
+                  "#ffae57",
+                color: "white",
+                borderRadius: "5px"
+              }}
+              position={"static"}
+            >
+              <Tabs value={index} onChange={(e, val) => onChange(val)}>
+                <Tab label="Programming Languages" disableRipple />
+                <Tab label="Engineering Focus Areas" disableRipple />
+                <Tab label="Behavior" disableRipple />
+              </Tabs>
+            </AppBar>
+            <div className="Tabs-TabContainer">
+              {index === 0 && (
+                <Paper>
+                  <TabContainer>
+                    {checkedButton ? (
+                      <DonutSkillSet />
+                    ) : (
+                      <SkillsHorizontalChart />
+                    )}
+                    <FormControlLabel
+                      control={
+                        <IOSSwitch
+                          checked={checkedButton}
+                          onChange={handleCheck}
+                          value="checkedB"
+                        />
+                      }
+                      style={{ fontWeight: "200" }}
+                      label={switchLabel}
+                    />
+                  </TabContainer>
+                </Paper>
+              )}
+
+              {index === 1 && (
+                <Paper>
+                  <TabContainer>
+                    <PolarAreaSkillChart />
+                  </TabContainer>
+                </Paper>
+              )}
+              {index === 2 && (
+                <Paper>
+                  <TabContainer>
+                    <RadarChart />
+                  </TabContainer>
+                </Paper>
+              )}
+            </div>
+            <div id="arrowDown">
+              <Down click={propDown} />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

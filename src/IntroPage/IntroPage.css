@@ -50,6 +50,7 @@ h4 {
   margin: 25px;
   -webkit-font-smoothing: antialiased;
   font-family: "Ropa Sans", sans-serif;
+
   /* font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
     BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif; */
 }
@@ -75,13 +76,27 @@ h4 {
   display: inline-block;
 }
 
-#para {
-  padding-left: 15%;
-  padding-right: 15%;
-  margin: auto;
-  font-family: "Ropa Sans", sans-serif;
+.intro_para {
+  -webkit-font-smoothing: antialiased;
+  color: #000000b9;
+  line-height: 1.3;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  margin: 0px;
 }
 
 #downArrow {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro_para {
+    font-size: 0.8rem;
+  }
+  .textContent {
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: center;
+  }
 }
