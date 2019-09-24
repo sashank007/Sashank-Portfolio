@@ -257,11 +257,24 @@
     font-size: 1rem;
     margin-left: 0px;
   }
+  #infoProject {
+    height: 300px;
+  }
 
   #workImage {
     width: 280px;
     height: 180px;
     margin: auto;
     margin-top: 20px;
+  }
+  .carousel__next-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .carousel__back-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
   }
 }

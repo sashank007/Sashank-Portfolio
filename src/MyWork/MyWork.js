@@ -99,6 +99,7 @@ const MyWork = props => {
                   for users to keep track of when users do not spend above their
                   daily allowance.
                 </span>
+
                 <img
                   className="momTracker"
                   id="workImage"
@@ -109,13 +110,14 @@ const MyWork = props => {
               </div>
             </Slide>
             <Slide index={1}>
-              {" "}
               <div class="car_tempe_happenings">
                 <h1>Tempe Happenings</h1>
                 <span id="infoProject" className="tempeHappenings">
                   Event management application for Tempe events built using
                   ReactJs and GraphQL with MongoDB.
                 </span>
+                <br />
+                <br />
                 <img
                   className="tempeHappenings"
                   id="workImage"
@@ -148,7 +150,7 @@ const MyWork = props => {
                 <h1>NPM Libraries</h1>
                 <span id="infoProject" className="NpmLib">
                   Javascript libraries created to help the Javascript community.
-                  Combined, the packages have more than 1000 downloads.
+                  Combined, the packages have more than 1000 downloads.{" "}
                 </span>
                 <img
                   id="workImage"
@@ -165,6 +167,9 @@ const MyWork = props => {
                 <span id="infoProject" className="sassy">
                   A minimalistic dark theme created for vs-code.
                 </span>
+                <br />
+                <br />
+                <br />
                 <img
                   id="workImage"
                   onClick={handleWorkClick}
@@ -185,6 +190,8 @@ const MyWork = props => {
                 >
                   Full-text search cheatsheet built for programming languages.
                 </span>
+                <br />
+                <br />
                 <img
                   id="workImage"
                   className="cheatsheet"
@@ -195,7 +202,7 @@ const MyWork = props => {
               </div>
             </Slide>
           </Slider>
-          <ButtonBack>Back</ButtonBack>
+          <ButtonBack style={{}}>Back</ButtonBack>
           <ButtonNext>Next</ButtonNext>
         </CarouselProvider>
       ) : (
