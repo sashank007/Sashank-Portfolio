@@ -10,12 +10,14 @@ import WordCloud from "../Common/WordCloud";
 import Contact from "../Contact/Contact";
 import Charts from "../Charts/Charts";
 import ChartsTab from "../Tab/Tab";
+import Portfolio from "../Portfolio/Portfolio";
+import Portfolio2 from "../Portfolio/Portfolio2";
 const Scrolling = () => (
   <ReactFullpage
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
-          <div className="section ">
+          <div className="section">
             <Home handleClick={() => fullpageApi.moveSectionDown()} />
           </div>
           <div className="section">
@@ -25,7 +27,8 @@ const Scrolling = () => (
             <SkillSet handleClick={() => fullpageApi.moveSectionDown()} />
           </div>
           <div className="section">
-            <MyWork handleClick={() => fullpageApi.moveSectionDown()} />
+            {/* <MyWork handleClick={() => fullpageApi.moveSectionDown()} /> */}
+            <Portfolio handleClick={() => fullpageApi.moveSectionDown()} />
           </div>
           <div className="section">
             <ChartsTab handleClick={() => fullpageApi.moveSectionDown()} />

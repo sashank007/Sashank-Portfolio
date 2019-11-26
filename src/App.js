@@ -4,8 +4,10 @@ import Home from "./Home/Home";
 import Responsive from "./Responsive/Responsive";
 import Scrolling from "./FullPage/Scrolling";
 import Test from "./Test/Test";
+import Portfolio from "./Portfolio/Portfolio";
 import SideNav from "./SideNav/SideNav";
 import "./App.css";
+import MenuScroll from "./MenuScroll/MenuScroll";
 
 function App() {
   return (
@@ -13,8 +15,11 @@ function App() {
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <Home /> */}
+        {/* <SideNav />
+        <Scrolling /> */}
         <SideNav />
-        <Scrolling />
+        <MenuScroll />
+        {/* <Portfolio /> */}
         {/* <Test /> */}
       </header>
     </div>

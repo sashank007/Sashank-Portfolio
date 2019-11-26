@@ -46,15 +46,15 @@ class Home extends Component {
           <p id="intro">Hello, my name is</p>
           <h1 id="name">Sashank Tungaturthi. </h1>
           <h2 id="mainHeader">
-            Wanna get to know <b id="sashankName">Me</b> better?
+            Want to get to know <b id="sashankName">Me</b> better? Let's go!!
             {/* <b id="sashankName">Sashank's</b> World. */}
           </h2>
 
-          <CustomButton
+          {/* <CustomButton
             className="customButton"
             title="Let's Go!"
             handleclick={this.handleClick}
-          />
+          /> */}
         </div>
         {/* )} */}
         {/* {showIntro ? (
