@@ -12,6 +12,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 // import CodeIcon from "../assets/images/code.png";
 import CodeIcon from "../Common/Code";
 import "./Home.css";
+import SIcon from "../../src/assets/images/s-logo.png";
 
 class Home extends Component {
   state = {
@@ -41,7 +42,8 @@ class Home extends Component {
         <hr />
         <div className="landingPage">
           {/* <img src={CodeIcon} id="code" /> */}
-          <CodeIcon />
+          {/* <CodeIcon /> */}
+          <img src={SIcon}></img>
 
           <p id="intro">Hello, my name is</p>
           <h1 id="name">Sashank Tungaturthi. </h1>
