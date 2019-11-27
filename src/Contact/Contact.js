@@ -25,8 +25,8 @@ const Contact = () => {
     <div>
       <h2 className="title">Contact Me</h2>
       <div style={{ background: "#f08b65" }} class="centered line" />
-      <div className="textContent">
-        <p id="para">
+      <div className="textContent-contact">
+        <p id="contact-para">
           I am currently looking for fulltime opportunities in the May of 2020.
           Please feel free to contact me, even if you just want to say hi! I
           make it a point to reply back to all emails!

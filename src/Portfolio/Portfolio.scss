@@ -1,4 +1,4 @@
-$header: #ff7e671a;
+$header: #33333317;
 $sobre: #dc3545;
 $nav: #dc3545;
 
@@ -30,7 +30,8 @@ article {
 .img-fluid {
   transition: all 1s;
   max-width: 100%;
-  height: auto;
+  height: 35vh;
+  width: 33vw;
   // max-height: 100%;
 }
 
@@ -43,15 +44,16 @@ article:hover > .jod-desc {
 }
 
 .jod-desc {
-  padding: 15px;
+  // padding: 15px;
   visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 33vw;
+  height: 35vh;
+  // height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.5s;
   z-index: 2;
@@ -80,9 +82,10 @@ article:hover > .jod-desc {
   // padding-top: 120px;
   padding-bottom: 50px;
   padding-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-  width: 90vw;
+  border-radius: 1%;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  width: 70vw;
   margin: auto;
 }
 
@@ -102,8 +105,8 @@ article:hover > .jod-desc {
   }
 
   article {
-    width: 50%;
-    height: 42vh;
+    width: 33vw;
+    height: 35vh;
     display: inline-block;
   }
 }
@@ -114,8 +117,12 @@ article:hover > .jod-desc {
       width: 60%;
     }
   }
+}
 
-  // article {
-  //   height: 56vh;
-  // }
+@media (min-width: 750px) {
+  footer {
+    .container {
+      width: 60vw;
+    }
+  }
 }
